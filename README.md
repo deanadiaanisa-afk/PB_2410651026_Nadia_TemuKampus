@@ -1,8 +1,8 @@
 # TemuKampus
 
-Nama: (Nadianur Anisa)
-NIM: (2410651026)
-Kelas: (B)
+Nama: Nadianur Anisa
+NIM: 2410651026
+Kelas: B
 
 ## Deskripsi
 Lost & Found Kampus adalah aplikasi mobile sederhana yang membantu mahasiswa dan warga kampus melaporkan barang hilang dan barang yang ditemukan di satu tempat. Selama ini, pemilik barang sulit melacak barangnya, dan penemu barang bingung harus melapor ke mana. Aplikasi ini mempertemukan keduanya lewat daftar laporan yang jelas.
@@ -27,7 +27,7 @@ flutter run -d chrome
 
 ## Status Setup
 Flutter Web/Chrome: berhasil
-Versi Flutter: (tempel dari flutter --version)
+Versi Flutter: (Flutter 3.47.5)
 
 ## Kendala
 Saat flutter pub get muncul error "not enough space on the disk" (errno 112) karena drive C: penuh (sisa 0,29 GB).
