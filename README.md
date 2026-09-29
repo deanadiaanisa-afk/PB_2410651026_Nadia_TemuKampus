@@ -1,17 +1,37 @@
-# flutter_application_pertama
+# TemuKampus
 
-A new Flutter project.
+Nama: (Nadianur Anisa)
+NIM: (2410651026)
+Kelas: (B)
 
-## Getting Started
+## Deskripsi
+Lost & Found Kampus adalah aplikasi mobile sederhana yang membantu mahasiswa dan warga kampus melaporkan barang hilang dan barang yang ditemukan di satu tempat. Selama ini, pemilik barang sulit melacak barangnya, dan penemu barang bingung harus melapor ke mana. Aplikasi ini mempertemukan keduanya lewat daftar laporan yang jelas.
 
-This project is a starting point for a Flutter application.
+Fitur awal: pengguna dapat menambahkan nama barang, lokasi, dan status laporan (hilang atau ditemukan).
 
-A few resources to get you started if this is your first Flutter project:
+## Pengguna
+Mahasiswa dan warga kampus.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Risiko Privasi
+Data lokasi dan informasi laporan perlu dijaga agar tidak disalahgunakan. Aplikasi hanya menyimpan informasi yang diperlukan, dan tidak boleh memuat data pribadi yang sensitif di dalam laporan.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tools yang Digunakan
+- VS Code
+- Flutter SDK
+- Chrome
+- Git dan GitHub
+
+## Cara Menjalankan
+flutter pub get
+flutter run -d chrome
+
+## Status Setup
+Flutter Web/Chrome: berhasil
+Versi Flutter: (tempel dari flutter --version)
+
+## Kendala
+Saat flutter pub get muncul error "not enough space on the disk" (errno 112) karena drive C: penuh (sisa 0,29 GB).
+Solusi: mengosongkan Keranjang Sampah dan file sementara lewat Pengaturan Windows, lalu mengulang flutter run.
+
+## Catatan AI
+Menggunakan Claude untuk menjelaskan error disk penuh, langkah Git, dan pembuatan repository. Hasilnya saya uji sendiri di terminal.
