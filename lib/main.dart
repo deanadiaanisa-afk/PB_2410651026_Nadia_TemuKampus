@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'TemuKampus', // UBAH: judul aplikasi
+      title: 'TemuKampus', 
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal), // UBAH: warna tema
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
       home: const HomePage(),
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TemuKampus 🔎'), // UBAH: judul di atas layar
+        title: const Text('TemuKampus 🔎'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: SingleChildScrollView(
@@ -46,7 +46,6 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               const Text(
-                // UBAH: deskripsi sesuai ide aplikasi
                 'Aplikasi ini membantu mahasiswa dan warga kampus melaporkan barang hilang atau barang yang ditemukan.',
                 style: TextStyle(fontSize: 16),
               ),
@@ -55,7 +54,7 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.teal.shade50, // UBAH: warna kartu
+                  color: Colors.teal.shade50, 
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Column(
@@ -63,12 +62,12 @@ class HomePage extends StatelessWidget {
                   children: [
                     Text('Nama: Nadianur Anisa'),
                     Text('NIM: 2410651026'),
-                    Text('Target Pengguna: Mahasiswa dan warga kampus'), // UBAH
+                    Text('Target Pengguna: Mahasiswa dan warga kampus'), 
                   ],
                 ),
               ),
               const SizedBox(height: 20),
-              // UBAH (TAMBAHAN): kartu fitur awal dan risiko privasi
+        
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
@@ -100,7 +99,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      // UBAH: teks notifikasi
+                      
                       content: Text('Prototype v0.0 TemuKampus siap dikembangkan.'),
                     ),
                   );
