@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'TemuKampus', 
+      title: 'TemuKampus',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TemuKampus 🔎'),
+        title: const Text('TemuKampus'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: SingleChildScrollView(
@@ -39,14 +39,11 @@ class HomePage extends StatelessWidget {
             children: [
               const Text(
                 'Prototype v0.0',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 12),
               const Text(
-                'Aplikasi ini membantu mahasiswa dan warga kampus melaporkan barang hilang atau barang yang ditemukan.',
+                'Aplikasi untuk melaporkan barang hilang atau ditemukan di kampus.',
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 20),
@@ -54,7 +51,7 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.teal.shade50, 
+                  color: Colors.teal.shade50,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Column(
@@ -62,12 +59,11 @@ class HomePage extends StatelessWidget {
                   children: [
                     Text('Nama: Nadianur Anisa'),
                     Text('NIM: 2410651026'),
-                    Text('Target Pengguna: Mahasiswa dan warga kampus'), 
+                    Text('Target Pengguna: Mahasiswa dan warga kampus'),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
-        
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
@@ -88,9 +84,7 @@ class HomePage extends StatelessWidget {
                       'Risiko Privasi',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      'Data lokasi dan informasi laporan perlu dijaga agar tidak disalahgunakan.',
-                    ),
+                    Text('Data lokasi dan informasi laporan perlu dijaga agar tidak disalahgunakan.'),
                   ],
                 ),
               ),
@@ -99,8 +93,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      
-                      content: Text('Prototype v0.0 TemuKampus siap dikembangkan.'),
+                      content: Text('Prototype v0.0 siap dikembangkan.'),
                     ),
                   );
                 },
