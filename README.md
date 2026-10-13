@@ -32,3 +32,17 @@ Screenshot aplikasi berjalan di Chrome dilampirkan pada LMS.
 
 ## Catatan Penggunaan AI
 AI digunakan untuk menjelaskan struktur project dan membantu menyusun kerangka kode serta dokumen. Rincian ada di AI_USAGE.md.
+
+# TemuKampus
+
+Aplikasi berbasis Flutter untuk melaporkan dan menemukan barang hilang atau ditemukan di lingkungan kampus.
+
+## Milestone Saat Ini: UI Blueprint (BAB 4)
+Pada tahap ini, aplikasi telah dirancang melalui dokumen **UI Blueprint** yang mencakup:
+- **3 Screen Utama:** Beranda (Home), Form Lapor Barang, dan Detail/Profil.
+- **User Flow:** Alur navigasi maju dan kembali yang terstruktur.
+- **Style Guide:** Standar penggunaan warna utama (Biru `#1976D2`), tipografi yang mudah dibaca, serta tombol interaktif.
+- **Accessibility:** Memastikan keterbacaan teks, kontras warna, dan ukuran sentuh (*touch target*) yang ramah pengguna.
+
+## Artefak Desain
+Dokumentasi lengkap perancangan UI/UX tersimpan di dalam folder `docs/ui-blueprint/UI_BLUEPRINT.md`.

@@ -14,3 +14,13 @@ Perubahan:
 Bukti:
 - Screenshot running tersedia.
 - Commit Git tersedia.
+
+# Changelog
+
+## [UI-Blueprint-v1.0] - 2026-10-13
+### Ditambahkan
+- Menambahkan dokumentasi UI Blueprint pada folder `docs/ui-blueprint/UI_BLUEPRINT.md`.
+- Menentukan 3 screen utama aplikasi (Beranda, Form Lapor, dan Detail/Profil) beserta *user flow*-nya.
+- Menyusun *style guide* sederhana (warna utama, tipografi, dan tombol).
+- Menambahkan checklist *accessibility* dasar dan *design decision log*.
+- Memperbarui `README.md` dengan ringkasan milestone UI Blueprint.
