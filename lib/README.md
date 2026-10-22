@@ -11,7 +11,7 @@ Kelas: B
 ## Milestone Saat Ini
 Navigation v0.1
 
-## Versi
+## Versi`
 v0.1 - Navigation
 
 ## Daftar Screen
@@ -19,6 +19,14 @@ v0.1 - Navigation
 - Daftar Laporan
 - Lapor Barang
 - Profil Pengembang
+
+## Struktur Screen (sesuai E.6 Modul)
+
+| Jenis Screen | Screen di Aplikasi | Fungsi | Komponen yang Dipakai |
+|--------------|--------------------|--------|-----------------------|
+| Home Screen | Home | Ringkasan aplikasi dan tombol menuju screen lain | AppBar, Text, ElevatedButton, OutlinedButton |
+| List/Feature Screen | Daftar Laporan | Fitur utama: daftar laporan barang | Column, Card, ListTile, Text, ChoiceChip |
+| Input/Profile Screen | Lapor Barang (input) dan Profil Pengembang | Menerima input pengguna dan menampilkan informasi profil | TextField, ElevatedButton, SnackBar, CircleAvatar |
 
 ## Alur Navigasi
 - Home ke Lapor Barang (tombol "Lapor Barang")
@@ -36,7 +44,9 @@ v0.1 - Navigation
 - Filter daftar laporan (Semua / Hilang / Ditemukan).
 
 ## Fitur dari Prototype v0.0 yang Dipertahankan
-Home tetap menampilkan nama aplikasi, deskripsi, fitur awal, dan risiko privasi. Identitas pengembang dipindah ke screen Profil sesuai UI Blueprint.
+- Home tetap menampilkan nama aplikasi dan deskripsi, dan tombolnya menjadi pintu navigasi.
+- Fitur awal (tambah nama barang, lokasi, status hilang/ditemukan) sekarang berjalan di screen Lapor Barang.
+- Identitas pengembang dan catatan privasi ada di screen Profil, sesuai UI Blueprint.
 
 ## Perbedaan dengan UI Blueprint
 - Setelah "Kirim Laporan", aplikasi kembali ke screen sebelumnya dan menampilkan SnackBar. Laporan belum masuk ke Daftar karena penyimpanan data baru dibahas di BAB 6.
@@ -68,8 +78,8 @@ Pengujian: `flutter test`
 
 ## Screenshot
 ![Home](docs/screenshots/01-home.png)
-![Daftar Laporan](docs/screenshots/02-daftar-laporan.png)
-![Lapor Barang](docs/screenshots/03-lapor-barang.png)
+![Daftar Laporan](docs/screenshots/02a-daftar-semua.png)
+![Lapor Barang](docs/screenshots/03a-lapor-hilang.png)
 ![Input dan SnackBar](docs/screenshots/04-input-snackbar.png)
 ![Profil](docs/screenshots/05-profil.png)
 
@@ -77,7 +87,8 @@ Pengujian: `flutter test`
 Data lokasi dan informasi laporan perlu dijaga agar tidak disalahgunakan. Kolom lokasi hanya untuk lokasi umum, dan aplikasi tidak meminta nomor HP atau alamat pribadi.
 
 ## Catatan Kendala
-Saat dijalankan tampilan di chrome tidak ada tampilannya, dan saya langsung perbaiki kendalanya
+- flutter test gagal karena widget_test.dart masih versi BAB 3 (mencari teks "Prototype v0.0"). Solusi: mengganti isi widget_test.dart agar menguji navigasi dan input pada versi baru.
+- Tampilan Chrome sempat kosong dan muncul pesan "Failed to fetch flutter_bootstrap.js" karena jaringan lambat. Solusi: menunggu kompilasi selesai, menutup jendela lama, lalu menjalankan ulang dengan flutter run -d chrome.
 
 ## Catatan Penggunaan AI
 AI (Claude) digunakan untuk membantu menyusun kerangka kode Navigation v0.1 berdasarkan UI Blueprint dan menjelaskan konsep Navigator, onPressed, dan TextField. Rincian ada di AI_USAGE.md.

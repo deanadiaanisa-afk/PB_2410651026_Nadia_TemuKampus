@@ -20,7 +20,7 @@ Modifikasi atau Verifikasi Mahasiswa:
 - Menjalankan aplikasi di Chrome dengan flutter run -d chrome
 - Menguji setiap tombol: Home ke tiga screen lain dan kembali, tombol Batal, tombol Kembali ke Beranda, filter, dan input kosong
 - Menjalankan flutter test sampai lulus
-- Memastikan fitur dari Prototype v0.0 (deskripsi, fitur awal, risiko privasi) masih tampil di Home
+- Memastikan fitur dari Prototype v0.0 tetap berjalan (nama aplikasi dan deskripsi di Home, fitur awal di Lapor Barang, identitas dan privasi di Profil)
 - Memeriksa tidak ada credential atau data sensitif di repository
 
 Bagian yang Saya Pahami:
