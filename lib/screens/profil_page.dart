@@ -48,7 +48,7 @@ class ProfilPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Aplikasi: TemuKampus'),
-                    Text('Versi: Navigation v0.1'),
+                    Text('Versi: Form & Validation v0.2'),
                     Text('Target Pengguna: Mahasiswa dan warga kampus'),
                   ],
                 ),
